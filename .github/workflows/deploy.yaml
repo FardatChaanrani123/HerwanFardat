@@ -6,7 +6,7 @@ on:
       - main #uniquement sur la branche main
 jobs:
   deploiement: # nom
-    runs-on:ubuntu-latest # instance temporaire
+    runs-on: ubuntu-latest # instance temporaire
     steps:
     - name: checkout code
       uses:  actions/checkout@v4
