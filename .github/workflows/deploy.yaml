@@ -22,6 +22,7 @@ jobs:
         aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws configure set region eu-west-3
         - name: Check if bucket exists 
+    - name: check if bucket exists
       run: |
         if aws s3api head-bucket --bucket $AWS_BUCKET_NAME; then
           echo "Bucket exists."
