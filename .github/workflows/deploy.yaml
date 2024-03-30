@@ -10,15 +10,10 @@ jobs:
     steps:
     - name: checkout code
       uses:  actions/checkout@v4
-    - name:   List directory
+    - name:   Install AWS CLI
       run: |
-        ls -la
-    - name:   lister les dossiers et les fichiers
-      run: |
-        ls -la
-    - name:   creer un nouveau fichier
-      run: |
-        touch newfie.txt
-     - name:   creer un nouveau fichier
-      run: |
-        touch newfie.t
+        sudo  apt-get update
+        sudo apt-get install -y python3-pip
+        sudo pip3 install awscli
+    
+    
