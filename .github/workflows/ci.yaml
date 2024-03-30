@@ -1,4 +1,4 @@
-name: 'Deploy App to S3'
+name: 'CI Deploy App to S3'
 # on: [push] #toutes les branches
 on:
   push:
@@ -16,9 +16,4 @@ jobs:
     - name:   lister les dossiers et les fichiers
       run: |
         ls -la
-    - name:   creer un nouveau fichier
-      run: |
-        touch newfie.txt
-     - name:   creer un nouveau fichier
-      run: |
-        touch newfie.t
+   
